@@ -23,8 +23,10 @@ else:
         f.write("\n\n")
 
 for item in head:
+    print("Scrapping...")
     with open(fileN, 'a') as f:
         f.write(item.find("a").text)
         f.write("\n")
         f.write(item.find("p").text)
         f.write("\n\n")
+    
